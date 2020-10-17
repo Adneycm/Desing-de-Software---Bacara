@@ -1,6 +1,7 @@
 # EP - Design de Software
 # Equipe: Adney Costa e Ricardo Mourão
-
+# Caso você não saiba a contagem das cartas nós preparamos um resuminho para facilitar a sua vida:
+# Ás vale 1. As cartas entre 2 e 9, incluindo ambos, possuem seus respectivos valores. Do 10 em diante as cartas valem 0.
 # Bibliotecas importadas
 import random
 
