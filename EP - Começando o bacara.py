@@ -379,3 +379,171 @@ elif tipo_de_aposta== 'banco' or "Banco" or "BANCO":
     print("A soma das cartas do jogador é: {0}".format(soma_jogador))
     print("A soma das cartas do banco é: {0}".format(soma_banco))
  
+# Se o jogador escolher apostar no Banco
+elif tipo_de_aposta== 'empate' or "Empate" or "EMPATE":
+    cartas_jogador= random.sample(baralho,2)
+    cartas_banco= random.sample(baralho,2)
+    print("As cartas do Jogador são: {0}".format(cartas_jogador))
+    print("As cartas do Banco são: {0}".format(cartas_banco))
+    # Transformando as strings do baralho em números
+    if cartas_jogador[0] in lista_valores_0:
+        cartas_jogador[0]= 0
+    if cartas_jogador[0] in lista_valores_1:
+        cartas_jogador[0]= 1
+    if cartas_jogador[0] in lista_valores_2:
+        cartas_jogador[0]= 2
+    if cartas_jogador[0] in lista_valores_3:
+        cartas_jogador[0]= 3
+    if cartas_jogador[0] in lista_valores_4:
+        cartas_jogador[0]= 4
+    if cartas_jogador[0] in lista_valores_5:
+        cartas_jogador[0]= 5
+    if cartas_jogador[0] in lista_valores_6:
+        cartas_jogador[0]= 6
+    if cartas_jogador[0] in lista_valores_7:
+        cartas_jogador[0]= 7
+    if cartas_jogador[0] in lista_valores_8:
+        cartas_jogador[0]= 8
+    if cartas_jogador[0] in lista_valores_9:
+        cartas_jogador[0]= 9
+
+    if cartas_jogador[1] in lista_valores_0:
+        cartas_jogador[1]= 0
+    if cartas_jogador[1] in lista_valores_1:
+        cartas_jogador[1]= 1
+    if cartas_jogador[1] in lista_valores_2:
+        cartas_jogador[1]= 2
+    if cartas_jogador[1] in lista_valores_3:
+        cartas_jogador[1]= 3
+    if cartas_jogador[1] in lista_valores_4:
+        cartas_jogador[1]= 4
+    if cartas_jogador[1] in lista_valores_5:
+        cartas_jogador[1]= 5
+    if cartas_jogador[1] in lista_valores_6:
+        cartas_jogador[1]= 6
+    if cartas_jogador[1] in lista_valores_7:
+        cartas_jogador[1]= 7
+    if cartas_jogador[1] in lista_valores_8:
+        cartas_jogador[1]= 8
+    if cartas_jogador[1] in lista_valores_9:
+        cartas_jogador[1]= 9
+
+    if cartas_banco[0] in lista_valores_0:
+        cartas_banco[0]= 0
+    if cartas_banco[0] in lista_valores_1:
+        cartas_banco[0]= 1
+    if cartas_banco[0] in lista_valores_2:
+        cartas_banco[0]= 2
+    if cartas_banco[0] in lista_valores_3:
+        cartas_banco[0]= 3
+    if cartas_banco[0] in lista_valores_4:
+        cartas_banco[0]= 4
+    if cartas_banco[0] in lista_valores_5:
+        cartas_banco[0]= 5
+    if cartas_banco[0] in lista_valores_6:
+        cartas_banco[0]= 6
+    if cartas_banco[0] in lista_valores_7:
+        cartas_banco[0]= 7
+    if cartas_banco[0] in lista_valores_8:
+        cartas_banco[0]= 8
+    if cartas_banco[0] in lista_valores_9:
+        cartas_banco[0]= 9
+
+    if cartas_banco[1] in lista_valores_0:
+        cartas_banco[1]= 0
+    if cartas_banco[1] in lista_valores_1:
+        cartas_banco[1]= 1
+    if cartas_banco[1] in lista_valores_2:
+        cartas_banco[1]= 2
+    if cartas_banco[1] in lista_valores_3:
+        cartas_banco[1]= 3
+    if cartas_banco[1] in lista_valores_4:
+        cartas_banco[1]= 4
+    if cartas_banco[1] in lista_valores_5:
+        cartas_banco[1]= 5
+    if cartas_banco[1] in lista_valores_6:
+        cartas_banco[1]= 6
+    if cartas_banco[1] in lista_valores_7:
+        cartas_banco[1]= 7
+    if cartas_banco[1] in lista_valores_8:
+        cartas_banco[1]= 8
+    if cartas_banco[1] in lista_valores_9:
+        cartas_banco[1]= 9
+
+    # Somando o valor das cartas
+    soma_banco= cartas_banco[0] + cartas_banco[1]
+    soma_jogador= cartas_jogador[0] + cartas_jogador[1]
+
+    # Condicionais para a soma de cartas
+    # Se a soma do jogador for maior que 10
+    if soma_jogador >= 10:
+        soma_jogador= soma_jogador - 10
+    # Se a soma do banco for maior que 10
+    if soma_banco >= 10:
+        soma_banco= soma_banco - 10
+    # Se a soma do jogador for menor ou  igual a 5
+    if soma_jogador <= 5:
+        carta_jogador_extra= random.sample(baralho,1)
+        cartas_jogador= cartas_jogador + carta_jogador_extra
+        print("A carta extra do jogador é: {0}".format(carta_jogador_extra))
+        if carta_jogador_extra[0] in lista_valores_0:
+            carta_jogador_extra[0]= 0
+        if carta_jogador_extra[0] in lista_valores_1:
+            carta_jogador_extra[0]= 1
+        if carta_jogador_extra[0] in lista_valores_2:
+            carta_jogador_extra[0]= 2
+        if carta_jogador_extra[0] in lista_valores_3:
+            carta_jogador_extra[0]= 3
+        if carta_jogador_extra[0] in lista_valores_4:
+            carta_jogador_extra[0]= 4
+        if carta_jogador_extra[0] in lista_valores_5:
+            carta_jogador_extra[0]= 5
+        if carta_jogador_extra[0] in lista_valores_6:
+            carta_jogador_extra[0]= 6
+        if carta_jogador_extra[0] in lista_valores_7:
+            carta_jogador_extra[0]= 7
+        if carta_jogador_extra[0] in lista_valores_8:
+            carta_jogador_extra[0]= 8
+        if carta_jogador_extra[0] in lista_valores_9:
+            carta_jogador_extra[0]= 9
+        # Agora nós somamos a carta extra
+        soma_jogador= soma_jogador + carta_jogador_extra[0]
+
+    # Se a soma do banco for menor ou  igual a 5
+    if soma_banco <= 5:
+        carta_banco_extra= random.sample(baralho,1)
+        cartas_banco= cartas_banco + carta_banco_extra
+        print("A carta extra do banco é: {0}".format(carta_banco_extra))
+        if carta_banco_extra[0] in lista_valores_0:
+            carta_banco_extra[0]= 0
+        if carta_banco_extra[0] in lista_valores_1:
+            carta_banco_extra[0]= 1
+        if carta_banco_extra[0] in lista_valores_2:
+            carta_banco_extra[0]= 2
+        if carta_banco_extra[0] in lista_valores_3:
+            carta_banco_extra[0]= 3
+        if carta_banco_extra[0] in lista_valores_4:
+            carta_banco_extra[0]= 4
+        if carta_banco_extra[0] in lista_valores_5:
+            carta_banco_extra[0]= 5
+        if carta_banco_extra[0] in lista_valores_6:
+            carta_banco_extra[0]= 6
+        if carta_banco_extra[0] in lista_valores_7:
+            carta_banco_extra[0]= 7
+        if carta_banco_extra[0] in lista_valores_8:
+            carta_banco_extra[0]= 8
+        if carta_banco_extra[0] in lista_valores_9:
+            carta_banco_extra[0]= 9
+        # Agora nós somamos a carta extra
+        soma_banco= soma_banco + carta_banco_extra[0]
+
+        # Recolocando as condições de soma das cartas
+        # Se a soma do jogador for maior que 10
+        if soma_jogador >= 10:
+            soma_jogador= soma_jogador - 10
+        # Se a soma do banco for maior que 10
+        if soma_banco >= 10:
+            soma_banco= soma_banco - 10
+    print("A soma das cartas do jogador é: {0}".format(soma_jogador))
+    print("A soma das cartas do banco é: {0}".format(soma_banco))
+ 
