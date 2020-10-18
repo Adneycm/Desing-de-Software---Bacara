@@ -1,7 +1,9 @@
 # EP - Design de Software
 # Equipe: Adney Costa e Ricardo Mourão
+# Data: 18/10/2020
 # Caso você não saiba a contagem das cartas nós preparamos um resuminho para facilitar a sua vida:
 # Ás vale 1. As cartas entre 2 e 9, incluindo ambos, possuem seus respectivos valores. Do 10 em diante as cartas valem 0.
+
 # Bibliotecas importadas
 import random
 
@@ -29,9 +31,12 @@ lista_valores_0= [b1[10],b2[10],b3[10],b4[10],  b1[11],b2[11],b3[11],b4[11],  b1
 # Condições iniciais
 soma_jogador= 0
 soma_banco= 0
-print("Seja bem vindo ao jogo! Vamos começar?!")
+print("Seja bem vindo ao jogo Bacará! Vamos começar?!")
 dinheiro= 100
 print("Você tem R$ {0}".format(dinheiro))
+# Implementação de múltiplos baralhos
+quantidade_de_baralhos= int(input("Você deseja jogar com 1, 6 ou 8 baralhos?"))
+baralho = baralho*quantidade_de_baralhos
 # Começando o jogo
 while dinheiro != 0:
     tipo_de_aposta= input("Em quem você quer apostar, Jogador, Banco ou Empate?")
