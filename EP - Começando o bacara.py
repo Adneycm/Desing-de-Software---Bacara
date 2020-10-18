@@ -484,4 +484,9 @@ if tipo_de_aposta== 'empate' or "Empate" or "EMPATE":
         else:
             print("Infelizmente você perdeu! Agora você tem {0} reais".format(dinheiro - valor_da_aposta))
             dinheiro= dinheiro - valor_da_aposta 
+
+    else:
+        print("Esse tipo de aposta não existe")
+if dinheiro== 0:
+    print("Infelizmente seu dinheiro acabou! Volte sempre!")
  
