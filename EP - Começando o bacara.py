@@ -332,8 +332,8 @@ while dinheiro != 0:
         print("A soma das cartas do jogador é: {0}".format(soma_jogador))
         print("A soma das cartas do banco é: {0}".format(soma_banco))
         if soma_banco > soma_jogador:
-            print("Parabéns! A soma do jogador foi maior. Com isso, você ganhou {0} reais, e agora tem {1} reais".format(valor_da_aposta, dinheiro + valor_da_aposta))
-            dinheiro= dinheiro + valor_da_aposta
+            print("Parabéns! A soma do jogador foi maior. Com isso, você ganhou {0} reais, e agora tem {1} reais".format(valor_da_aposta*0.95, dinheiro + valor_da_aposta*0.95))
+            dinheiro= dinheiro + valor_da_aposta*0.95
         if soma_banco <= soma_jogador:
             print("Infelizmente você perdeu! Agora você tem {0} reais".format(dinheiro - valor_da_aposta))
             dinheiro= dinheiro - valor_da_aposta
