@@ -1,9 +1,9 @@
-Insper 2020.2
-Design de Software
-Professor: Luciano Soares
-Exercício Programa - Bacará
-Turma 1A de Engenharia
-Grupo: Adney Costa e Ricardo Mourão 
+Insper 2020.2 - 
+ Design de Software - 
+ Professor: Luciano Soares - 
+ Exercício Programa - Bacará - 
+ Turma 1A de Engenharia - 
+ Grupo: Adney Costa e Ricardo Mourão -  
 
 O exercício programa tem como objetivo criar um jogo de cartas chamado Bacará,
 que consiste em um jogo de apostas. Existem apenas 2 jogadores nesse jogo, o jogador
