@@ -193,7 +193,7 @@ while dinheiro != 0:
     
 
 # Se o jogador escolher apostar no Banco
-elif tipo_de_aposta== 'banco' or "Banco" or "BANCO":
+if tipo_de_aposta== 'banco' or "Banco" or "BANCO":
     cartas_jogador= random.sample(baralho,2)
     cartas_banco= random.sample(baralho,2)
     print("As cartas do Jogador são: {0}".format(cartas_jogador))
