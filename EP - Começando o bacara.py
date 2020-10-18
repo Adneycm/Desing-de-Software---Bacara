@@ -46,7 +46,7 @@ while dinheiro != 0:
         valor_da_aposta= int(input("Você não tem essa quantia de dinheiro. Por favor escolha um valor condizente com seu dinheiro:"))
 
     # Se o jogador escolher apostar no jogador
-    if tipo_de_aposta== 'jogador' or "Jogador" or "JOGADOR":
+    if tipo_de_aposta== 'jogador':
         cartas_jogador= random.sample(baralho,2)
         cartas_banco= random.sample(baralho,2)
         print("As cartas do Jogador são: {0}".format(cartas_jogador))
@@ -187,13 +187,13 @@ while dinheiro != 0:
         if soma_jogador > soma_banco:
             print("Parabéns! A soma do jogador foi maior. Com isso, você ganhou {0} reais, e agora tem {1} reais".format(valor_da_aposta, dinheiro + valor_da_aposta))
             dinheiro= dinheiro + valor_da_aposta
-        if soma_jogador <= soma_banco:
+        else:
             print("Infelizmente você perdeu! Agora você tem {0} reais".format(dinheiro - valor_da_aposta))
             dinheiro= dinheiro - valor_da_aposta
     
 
 # Se o jogador escolher apostar no Banco
- if tipo_de_aposta== 'banco' or "Banco" or "BANCO":
+    elif tipo_de_aposta== 'banco':
         cartas_jogador= random.sample(baralho,2)
         cartas_banco= random.sample(baralho,2)
         print("As cartas do Jogador são: {0}".format(cartas_jogador))
@@ -334,13 +334,13 @@ while dinheiro != 0:
         if soma_banco > soma_jogador:
             print("Parabéns! A soma do jogador foi maior. Com isso, você ganhou {0} reais, e agora tem {1} reais".format(valor_da_aposta*0.95, dinheiro + valor_da_aposta*0.95))
             dinheiro= dinheiro + valor_da_aposta*0.95
-        if soma_banco <= soma_jogador:
+        elif soma_banco <= soma_jogador:
             print("Infelizmente você perdeu! Agora você tem {0} reais".format(dinheiro - valor_da_aposta))
             dinheiro= dinheiro - valor_da_aposta
     
  
 # Se o jogador escolher apostar no empate
-if tipo_de_aposta== 'empate' or "Empate" or "EMPATE":
+    elif tipo_de_aposta== 'empate':
         cartas_jogador= random.sample(baralho,2)
         cartas_banco= random.sample(baralho,2)
         print("As cartas do Jogador são: {0}".format(cartas_jogador))
